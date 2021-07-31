@@ -7,7 +7,7 @@ class Navigation extends Component{
     render(){
         let menuContent = this.props.menuItems.filter((item)=>item.navItem).map((item,idx)=>{
             return <Nav.Item key={idx}>
-                <Link to={item.path} className="nav-link fw-bold text-white text-shadow">
+                <Link to={item.path} className="nav-link fw-bold text-violet">
                     {item.name}
                 </Link>
             </Nav.Item>;
@@ -15,7 +15,7 @@ class Navigation extends Component{
         return(
             <Navbar bg="transparent" variant="light" expand="md" className="position-absolute px-2 w-100 z-index-100" collapseOnSelect>
                 <Navbar.Brand>
-                    <Link to="/" className="font-weight-bold font-logo decoration-none text-green">
+                    <Link to="/" className="fw-bold font-logo decoration-none text-green">
                         <img src="img/navbar_logo.png" alt="logo" className="me-2"/>                        
                     </Link>
                 </Navbar.Brand>
