@@ -1,4 +1,14 @@
 .bg{
+    &-about{        
+        @include set-background($bg__about-img,0,"top center","cover","scroll");
+
+    }
+    &-home{
+        @include set-background($bg__home-img,0,"top center","cover","scroll");
+    }
+    &-offer{
+        @include set-background($bg__offer-img,0,"center","cover","fixed");
+    }
     &-violet{
         background-color: $color__violet!important;
     }

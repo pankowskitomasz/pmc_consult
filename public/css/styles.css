@@ -25,18 +25,49 @@ body, html {
 .minh-100vh {
   min-height: 100vh;
 }
+/* line 14, ../../sass/partials/_minh.scss */
+.minh-footer-adj {
+  min-height: calc( 100vh - 56px );
+  min-height: -o-calc( 100vh - 56px );
+  min-height: -moz-calc( 100vh - 56px );
+  min-height: -webkit-calc( 100vh - 56px );
+}
 
 /* line 2, ../../sass/partials/_modules.scss */
+.bg-about {
+  background-attachment: scroll;
+  background-image: url(../img/privacy.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 6, ../../sass/partials/_modules.scss */
+.bg-home {
+  background-attachment: scroll;
+  background-image: url(../img/coming.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 9, ../../sass/partials/_modules.scss */
+.bg-offer {
+  background-attachment: fixed;
+  background-image: url(../img/offer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 12, ../../sass/partials/_modules.scss */
 .bg-violet {
   background-color: #a06afd !important;
 }
 
-/* line 7, ../../sass/partials/_modules.scss */
+/* line 17, ../../sass/partials/_modules.scss */
 .border-violet {
   border-color: #a06afd !important;
 }
 
-/* line 12, ../../sass/partials/_modules.scss */
+/* line 22, ../../sass/partials/_modules.scss */
 .contact-bg {
   background-attachment: fixed;
   background-image: url(../img/coming.jpg);
@@ -45,7 +76,7 @@ body, html {
   background-size: cover;
 }
 
-/* line 17, ../../sass/partials/_modules.scss */
+/* line 27, ../../sass/partials/_modules.scss */
 .login-form, .register-form {
   background-attachment: fixed;
   background-image: url(../img/coming.jpg);
@@ -54,21 +85,21 @@ body, html {
   background-size: cover;
 }
 
-/* line 22, ../../sass/partials/_modules.scss */
+/* line 32, ../../sass/partials/_modules.scss */
 .opacity-8 {
   opacity: 0.8;
 }
-/* line 25, ../../sass/partials/_modules.scss */
+/* line 35, ../../sass/partials/_modules.scss */
 .opacity-9 {
   opacity: 0.9;
 }
 
-/* line 35, ../../sass/partials/_modules.scss */
+/* line 45, ../../sass/partials/_modules.scss */
 .text-violet {
   color: #a06afd !important;
 }
 
-/* line 39, ../../sass/partials/_modules.scss */
+/* line 49, ../../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
