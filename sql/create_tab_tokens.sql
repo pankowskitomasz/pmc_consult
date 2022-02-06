@@ -1,4 +1,4 @@
-CREATE TABLE pmc_consult_tokens(
+CREATE TABLE pmcconsult_tokens(
     id INT NOT NULL AUTO_INCREMENT,
     userid INT NOT NULL,
     logged DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -6,5 +6,5 @@ CREATE TABLE pmc_consult_tokens(
     token VARCHAR(40) NOT NULL,
     messages INT DEFAULT 0,
     PRIMARY KEY(id),
-    FOREIGN KEY(userid) REFERENCES pmc_consult_users(id)
+    FOREIGN KEY(userid) REFERENCES pmcconsult_users(id)
 );

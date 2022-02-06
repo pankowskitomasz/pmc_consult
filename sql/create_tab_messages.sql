@@ -1,4 +1,4 @@
-CREATE TABLE pmc_consult_messages(
+CREATE TABLE pmcconsult_messages(
     id INT NOT NULL AUTO_INCREMENT,
     firstname VARCHAR(50) NOT NULL,
     lastname VARCHAR(50) NOT NULL,
