@@ -5,7 +5,7 @@ import Col from "../../node_modules/react-bootstrap/Col";
 import Button from "../../node_modules/react-bootstrap/Button";
 import Card from "../../node_modules/react-bootstrap/Card";
 
-class MessageSent extends Component {
+class LoginError extends Component {
     hndBack(){
         this.props.backNav("form");
     }
@@ -14,14 +14,14 @@ class MessageSent extends Component {
             <Container fluid className={"login-form align-items-center p-0 py-5 bg-white d-flex minh-footer-adj " + this.props.classExt}>
                 <Row className="mx-auto text-center w-100">
                     <Col xs={10} md={6} className="mx-auto p-0 d-flex align-items-center">
-                        <Card className="mx-auto border-violet shadow bg-white opacity-9">
-                            <Card.Header className="text-violet text-start border-violet">
-                                Message sent!
+                        <Card className="mx-auto border border-violet rounded bg-white shadow text-violet">
+                            <Card.Header className="text-violet fw-bold text-start border-violet">
+                                Login error!
                             </Card.Header>
-                            <Card.Body className="text-center text-violet bg-form p-5">
-                                <p className="lead">Message was sent!</p>
-                                <Button variant={"outline-dark border-violet text-violet rounded-pill"} onClick={this.hndBack.bind(this)}>
-                                    back to Form
+                            <Card.Body className="text-center text-violet p-5">
+                                <p className="lead">Incorrect login or password!</p>
+                                <Button variant={"outline-dark border-violet text-violet"} onClick={this.hndBack.bind(this)}>
+                                    OK
                                 </Button>
                             </Card.Body>
                         </Card>
@@ -32,4 +32,4 @@ class MessageSent extends Component {
     }
 }
 
-export default MessageSent;
+export default LoginError;

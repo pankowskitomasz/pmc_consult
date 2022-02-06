@@ -55,15 +55,15 @@ class LoginForm extends Component{
     }
 
     clearForm(){
-        this.setState({userData: loginFormApi.getClearData()});      
+        this.setState({userData: loginFormApi.getClearData()});        
     }
 
     render(){
         return(        
-            <Container fluid className={"login-form align-items-center p-0 py-5 d-flex minh-100vh "+this.props.classExt}>
+            <Container fluid className={"login-form align-items-center p-0 py-5 d-flex minh-footer-adj "+this.props.classExt}>
                 <Row className="mx-auto text-start w-100 pt-5">
                     <Col xs={11} md={5} lg={4} className="mx-auto p-0 d-flex align-items-center">
-                        <Form className="text-start w-100 border border-violet p-4 rounded bg-white shadow text-violet fw-bold z-index-10"
+                        <Form className="text-start w-100 bg-white opacity-9 border border-violet p-4 rounded bg-form shadow text-violet fw-bold z-index-10"
                             autoComplete="off"
                             method="POST">
                             <div className="border-bottom border-violet mb-4">
@@ -75,7 +75,7 @@ class LoginForm extends Component{
                                 <Form.Label>Login</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter login" 
-                                    className="rounded-pill border-violet text-secondary"
+                                    className="rounded-pill border-violet bg-white text-dark"
                                     maxLength="50"
                                     name="userName"
                                     onChange={this.updateUserData.bind(this)} 
@@ -86,7 +86,7 @@ class LoginForm extends Component{
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" 
                                     placeholder="Enter password" 
-                                    className="rounded-pill border-violet text-secondary"
+                                    className="rounded-pill border-violet bg-white text-dark"
                                     maxLength="40"
                                     name="userPass"
                                     onChange={this.updateUserData.bind(this)} 
@@ -101,14 +101,14 @@ class LoginForm extends Component{
                                     </Link>
                                 </p>
                             </div>
-                            <div className="w-100 text-end py-1">
+                            <div className="w-100 text-end py-2 border-top border-violet">
                                 <Button 
-                                    variant="outline-light" 
+                                    variant="outline-dark" 
                                     type="reset" 
                                     className="mx-1 rounded-pill border-violet text-violet">
                                     Clear
                                 </Button>
-                                <Button variant="outline-light" 
+                                <Button variant="outline-dark" 
                                     className="mx-1 rounded-pill border-violet text-violet"
                                     onClick={this.sendForm.bind(this)}>
                                     Login
