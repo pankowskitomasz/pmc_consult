@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "JotiOne";
+  src: url("../fonts/JotiOne-Regular.ttf");
+}
 /* line 1, ../../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -27,10 +31,10 @@ body, html {
 }
 /* line 14, ../../sass/partials/_minh.scss */
 .minh-footer-adj {
-  min-height: calc( 100vh - 56px );
-  min-height: -o-calc( 100vh - 56px );
-  min-height: -moz-calc( 100vh - 56px );
-  min-height: -webkit-calc( 100vh - 56px );
+  min-height: calc( 100vh - 41px );
+  min-height: -o-calc( 100vh - 41px );
+  min-height: -moz-calc( 100vh - 41px );
+  min-height: -webkit-calc( 100vh - 41px );
 }
 
 /* line 2, ../../sass/partials/_modules.scss */
@@ -100,6 +104,12 @@ body, html {
 }
 
 /* line 49, ../../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "JotiOne";
+  letter-spacing: 1px;
+}
+
+/* line 53, ../../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
